@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #d3d3d3;
+}
+
+.hamburger {
+  width: 85%;
+  margin: 0 auto;
+  height: 50px;
+  padding: 10px 0;
+}
+
+#header_section {
+  background-image:  linear-gradient(
+    rgba(253, 253, 253, 0.7),
+    rgba(218, 218, 218, 0.8)
+  ),
+  url(./images/worship.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 102vh;
+}
+
+.wesing_header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#header_section .hello {
+  color: #ec5242;
+  font-weight: normal;
+  font-size: 23px;
+  padding-top: 10px;
+}
+
+#header_section .hello_capital {
+  color: #e8240e;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 2px rgba(140, 136, 136, 0.6);
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+
+#header_section .intro_parag {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  border-radius: 10px;
+  color: #333;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+}
+
+.wesing_date {
+  line-height: 2;
+  color: #333;
+  font-weight: bold;
+}
+
+.wesing_date h2 i,
+.wesing_date h3 i {
+  margin-right: 10px;
+}
+
+.wesing_date p i {
+  margin-right: 20px;
+}
+
+.wesing_date h3 {
+  line-height: 1.2;
+}
