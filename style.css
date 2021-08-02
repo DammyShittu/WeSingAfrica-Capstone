@@ -104,7 +104,8 @@ body {
 
 #project_schedule .main-program,
 #wesing_guests .main-program,
-#about_project_schedule .main-program {
+#about_project_schedule .main-program,
+#previous_events .main-program {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -119,7 +120,8 @@ body {
 
 #project_schedule hr,
 #wesing_guests hr,
-#about_project_schedule hr {
+#about_project_schedule hr,
+#previous_events hr {
   border: 0;
   border-top: 1px solid #ec5242;
 }
@@ -314,6 +316,7 @@ header {
 
 #about_project_schedule {
   background-color: #fff;
+  padding-bottom: 50px;
 }
 
 #about_project_schedule .main-program {
@@ -341,6 +344,9 @@ header {
 
 #about_project_schedule .wesing_logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   border: 1px solid rgba(181, 178, 178, 0.597);
   margin-top: 30px;
   gap: 10px;
@@ -359,4 +365,73 @@ header {
 
 #about_project_schedule .wesing_logo span {
   font-size: 12px;
+  padding: 5px 0;
+  border-top: 1px solid rgba(181, 178, 178, 0.597);
+  border-bottom: 1px solid rgba(181, 178, 178, 0.597);
+}
+
+#previous_events {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  border-top: 1px solid rgba(158, 156, 156, 0.83);
+}
+
+#previous_events .main-program h3 {
+  color: #272a31;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+#previous_events p {
+  font-size: 15px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+#previous_event_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#previous_event_card .event_card {
+  width: 85%;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+}
+
+#previous_event_card .card_1 {
+  background-image:  linear-gradient(
+    rgba(255, 0, 0, 0.4),
+    rgba(255, 0, 0, 0.4)
+  ),
+  url(./images/testimonial_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#previous_event_card .card_2 {
+  background-image:  linear-gradient(
+    rgba(255, 0, 0, 0.4),
+    rgba(255, 0, 0, 0.4)
+  ),
+  url(./images/testimonial_2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#previous_event_card .event_card h5 {
+  font-size: 30px;
+}
+
+#previous_event_card .event_card h6 {
+  font-size: 15px;
 }
