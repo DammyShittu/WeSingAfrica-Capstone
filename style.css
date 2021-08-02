@@ -384,6 +384,7 @@ header {
   width: 80%;
   margin: 0 auto;
   line-height: 1.6;
+  font-size: 26px;
 }
 
 #previous_events p {
@@ -456,8 +457,40 @@ header {
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 25px;
 }
 
 #wesing_partners .partners img {
   width: 30%;
+}
+
+footer {
+  background-color: #fff;
+  display: flex;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+footer .footer_copy {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer_copy span {
+  padding: 2px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+footer .footer_copy h6 {
+  font-size: 16px;
+}
+
+footer .final-parag p {
+  font-size: 14px;
+  color: #333;
 }
