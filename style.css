@@ -105,7 +105,8 @@ body {
 #project_schedule .main-program,
 #wesing_guests .main-program,
 #about_project_schedule .main-program,
-#previous_events .main-program {
+#previous_events .main-program,
+#wesing_partners .main-program {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,7 +122,8 @@ body {
 #project_schedule hr,
 #wesing_guests hr,
 #about_project_schedule hr,
-#previous_events hr {
+#previous_events hr,
+#wesing_partners hr {
   border: 0;
   border-top: 1px solid #ec5242;
 }
@@ -434,4 +436,28 @@ header {
 
 #previous_event_card .event_card h6 {
   font-size: 15px;
+}
+
+#wesing_partners {
+  background: #272a31;
+  text-align: center;
+}
+
+#wesing_partners .main-program {
+  padding: 30px 0;
+}
+
+#wesing_partners .partners {
+  display: flex;
+  width: 90%;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#wesing_partners .partners img {
+  width: 30%;
 }
