@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #d3d3d3;
+  color: #272a31;
 }
 
 #home_header {
@@ -35,7 +36,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 102vh;
+  height: auto;
+  padding-bottom: 20px;
 }
 
 .wesing_header,
@@ -282,10 +284,6 @@ body {
 
 /* About.html Styling */
 
-#about-main {
-  text-align: center;
-}
-
 .about_header_section {
   background-image:  linear-gradient(
     rgba(253, 253, 253, 0.7),
@@ -295,7 +293,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 117vh;
+  height: auto;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 header {
@@ -325,4 +325,38 @@ header {
   width: 70%;
   margin: 0 auto;
   font-size: 25px;
+  text-align: center;
+}
+
+#about_project_schedule p,
+#about_project_schedule .wesing_logo {
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#about_project_schedule p {
+  text-align: center;
+}
+
+#about_project_schedule .wesing_logo {
+  display: flex;
+  border: 1px solid rgba(181, 178, 178, 0.597);
+  margin-top: 30px;
+  gap: 10px;
+  padding: 10px;
+}
+
+#about_project_schedule .wesing_logo img {
+  width: 100px;
+  height: 100px;
+}
+
+#about_project_schedule .wesing_logo h4 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#about_project_schedule .wesing_logo span {
+  font-size: 12px;
 }
