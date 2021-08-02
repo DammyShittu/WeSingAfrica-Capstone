@@ -179,3 +179,85 @@ body {
 .program_button button:focus {
   background-color: #e8240e;
 }
+
+#wesing_guests .main-program h3 {
+  color: #272a31;
+}
+
+.guest_list {
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.guest_list .guest {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.guest_list .guest .image_design {
+  position: relative;
+}
+
+.guest_list .guest .image_design .checker {
+  position: absolute;
+  top: -30px;
+  left: -20px;
+  width: 90px;
+  z-index: 2;
+}
+
+.guest_list .guest img {
+  position: relative;
+  width: 120px;
+  z-index: 3;
+}
+
+.guest aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.guest aside h4{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.guest aside p {
+  color: #ec5242;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.guest aside span {
+  font-size: 14px;
+  color: #272a31;
+}
+
+.guest_list .guest-hidden {
+  display: none;
+}
+
+#wesing_guests .guest_button {
+  display: flex;
+  padding: 20px 0;
+}
+
+#wesing_guests .guest_button button {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid rgba(140, 137, 137, 0.638);
+  background: transparent;
+  padding: 15px;
+  color: #272a31;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#wesing_guests .guest_button button i {
+  color: #ec5242;
+  padding-left: 10px;
+}
