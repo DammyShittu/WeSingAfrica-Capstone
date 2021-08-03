@@ -13,9 +13,22 @@
 
 <body>
 
+  <!-- Mobile Menu -->
+  <div id="wesing_menu" class="mobile-menu">
+    <ul>
+      <li class="header-link"><a href="index.html">Home</a></li>
+      <li class="header-link"><a href="#">About</a></li>
+      <li class="header-link"><a href="./index.html#project_schedule">Program</a></li>
+      <li class="header-link"><a href="#previous_events">Previous Events</a></li>
+      <li class="header-link"><a href="./index.html#wesing_guests">Guests</a></li>
+    </ul>
+    <img src="./images/Icon.png" alt="Close Menu" class="close" id="close-menu">
+  </div>
+  <!-- End Of Mobile Menu -->
+
   <header id="main-nav">
     <!-- First Navigation Bar -->
-      <div class="logout-nav">
+    <div class="logout-nav">
       <nav id="first-nav">
         <ul>
           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -26,30 +39,30 @@
         </ul>
       </nav>
     </div>
-  
-      <!-- Second Navigation Bar -->
-      <div class="hamburger">
-        <i class="fas fa-bars fa-2x"></i>
+
+    <!-- Second Navigation Bar -->
+    <div class="hamburger">
+      <i class="fas fa-bars fa-2x" id="bars"></i>
+    </div>
+    <div class="nav-with-image">
+      <div>
+
+        <img src="./images/wesing-logo.png" alt="Header Logo">
       </div>
-      <div class="nav-with-image">
-        <div>
-          
-          <img src="./images/wesing-logo.png" alt="Header Logo">
-        </div>
-  
-        <nav>
+
+      <nav>
+        <ul>
           <ul>
-            <ul>
-              <li class="header-link"><a href="index.html" >Home</a></li>
-              <li class="header-link"><a href="#" class="current">About</a></li>
-              <li class="header-link"><a href="./index.html#project_schedule">Program</a></li>
-              <li class="header-link"><a href="#previous_events">Previous Events</a></li>
-              <li class="header-link"><a href="./index.html#wesing_guests">Guests</a></li>
-            </ul>
+            <li class="header-link"><a href="index.html">Home</a></li>
+            <li class="header-link"><a href="#" class="current">About</a></li>
+            <li class="header-link"><a href="./index.html#project_schedule">Program</a></li>
+            <li class="header-link"><a href="#previous_events">Previous Events</a></li>
+            <li class="header-link"><a href="./index.html#wesing_guests">Guests</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main id="about-main">
     <!-- Headline Section -->
@@ -85,7 +98,9 @@
       </div>
 
       <p>The logo of WeSingAfrica 2021 was decided through the logo competition from 8. June to 10. July </p>
-      <p class="hide-parag">After online public's voting and the Selection committee's judging process, the logo from Isaac John won the prize. After consultation with Mr Isaac, we optimized the prize-winning logo for this year's concert as follows. </p>
+      <p class="hide-parag">After online public's voting and the Selection committee's judging process, the logo from
+        Isaac John won the prize. After consultation with Mr Isaac, we optimized the prize-winning logo for this year's
+        concert as follows. </p>
 
       <div class="wesing_logo">
         <img src="./images/full-logo.png" alt="WeSing Logo">
@@ -140,11 +155,13 @@
       </aside>
     </div>
 
-   <div class="final-parag">
-     <p>2021 WeSingAfrica Nigeria</p>
-     <p>Some Rights Reserved</p>
-   </div>
+    <div class="final-parag">
+      <p>2021 WeSingAfrica Nigeria</p>
+      <p>Some Rights Reserved</p>
+    </div>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 
 </html>

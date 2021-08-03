@@ -14,6 +14,64 @@ body {
   color: #272a31;
 }
 
+/* Mobile Menu Styling */
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #272a31;
+  top: -110%;
+  left: 0;
+  z-index: 100;
+  transition: 500ms ease-in-out;
+  text-align: center;
+}
+
+.mobile-menu ul {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.mobile-menu ul li {
+  position: relative;
+  list-style: none;
+  margin: 35px auto;
+  z-index: 999;
+}
+
+
+.mobile-menu ul li a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #ebebff;
+  text-decoration: none;
+  padding: 5px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.mobile-menu ul li a:hover {
+  color: #ec5242;
+  transform: scale(1.03);
+}
+
+.mobile-menu img {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.mobile-menu img:hover {
+  animation: rotateX 300ms ease-in-out;
+  color: #ec5242;
+}
+
+/* End Of Mobile Menu Styling */
 .hamburger {
   width: 80%;
   margin: 0 auto;
@@ -723,5 +781,15 @@ footer .final-parag p {
 
   #about-footer .final-parag p {
     color: #fff;
+  }
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
   }
 }
