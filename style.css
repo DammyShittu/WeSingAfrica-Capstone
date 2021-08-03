@@ -126,7 +126,7 @@ body {
   color: #ec5242;
   font-weight: normal;
   font-size: 23px;
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
 #header_section .hello_capital,
@@ -427,6 +427,7 @@ body {
   color: #272a31;
   width: 70%;
   margin: 0 auto;
+  margin-top: 60px;
   font-size: 25px;
   text-align: center;
   font-family: 'cocogoose', sans-serif;
@@ -469,7 +470,7 @@ body {
 #previous_events {
   background-color: #fff;
   text-align: center;
-  padding: 40px 0;
+  padding: 90px 0;
   border-top: 1px solid rgba(158, 156, 156, 0.83);
 }
 
@@ -678,11 +679,12 @@ footer .final-parag p {
   .about_header_section .intro_parag {
     width: 45%;
     padding: 15px;
+
   }
 
   .about_header_section .hello_capital,
   .about_header_section .intro_parag {
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
 
@@ -761,6 +763,10 @@ footer .final-parag p {
     flex-direction: row;
     width: 75%;
     margin: 80px auto;
+  }
+
+  #previous_event_card .event_card {
+    height: 300px;
   }
 
   .sponsors {

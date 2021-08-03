@@ -7,15 +7,14 @@ const clickLinks = document.querySelectorAll(".header-link")
 
 openWesingMenu.addEventListener('click', () => {
   weSingMenu.style.top = '0';
-})
+});
 
 closeWesingMenu.addEventListener('click', () => {
   weSingMenu.style.top = '-110%';
-})
+});
 
 clickLinks.forEach((link) => {
   link.addEventListener('click', () => {
     weSingMenu.style.top = '-110%';
-  })
-})
-
+  });
+});
