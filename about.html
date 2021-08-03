@@ -13,12 +13,43 @@
 
 <body>
 
-  <!-- Header Section -->
-  <!-- <header>
-    <div class="hamburger">
-      <i class="fas fa-bars fa-2x"></i>
+  <header id="main-nav">
+    <!-- First Navigation Bar -->
+      <div class="logout-nav">
+      <nav id="first-nav">
+        <ul>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
     </div>
-  </header> -->
+  
+      <!-- Second Navigation Bar -->
+      <div class="hamburger">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+      <div class="nav-with-image">
+        <div>
+          
+          <img src="./images/wesing-logo.png" alt="Header Logo">
+        </div>
+  
+        <nav>
+          <ul>
+            <ul>
+              <li class="header-link"><a href="index.html" >Home</a></li>
+              <li class="header-link"><a href="#" class="current">About</a></li>
+              <li class="header-link"><a href="./index.html#project_schedule">Program</a></li>
+              <li class="header-link"><a href="#previous_events">Previous Events</a></li>
+              <li class="header-link"><a href="./index.html#wesing_guests">Guests</a></li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
   <main id="about-main">
     <!-- Headline Section -->
@@ -54,14 +85,11 @@
       </div>
 
       <p>The logo of WeSingAfrica 2021 was decided through the logo competition from 8. June to 10. July </p>
+      <p class="hide-parag">After online public's voting and the Selection committee's judging process, the logo from Isaac John won the prize. After consultation with Mr Isaac, we optimized the prize-winning logo for this year's concert as follows. </p>
 
       <div class="wesing_logo">
         <img src="./images/full-logo.png" alt="WeSing Logo">
 
-        <!-- <div class="aside">
-          <h4>WeSingAfrica Gospel Concert 2021</h4>
-          <span>10th - 11th Dec 2021 | Surulere, Lagos</span>
-        </div> -->
       </div>
     </section>
 
@@ -88,7 +116,7 @@
     </section>
 
     <!-- Partners -->
-    <section id="wesing_partners">
+    <section id="wesing_partners" class="sponsors">
       <div class="main-program">
         <h3>Partners</h3>
         <hr width="30">
@@ -104,7 +132,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="about-footer">
     <div class="footer_copy">
       <img src="./images/wesing-logo.png" alt="Footer Logo">
       <aside>

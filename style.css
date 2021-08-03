@@ -10,17 +10,38 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #d3d3d3;
+  background-color: #f5f5f5;
   color: #272a31;
 }
 
-header {
-  height: 80px;
-  width: 100%;
+.hamburger {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.hamburger {
-  padding: 15px;
+.hamburger i {
+  cursor: pointer;
+  transition: 200ms;
+  transform: scale(0.98);
+}
+
+#main-nav .nav-with-image {
+  height: 70px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+.logout-nav {
+  display: none;
+}
+
+#main-nav .nav-with-image i {
+  margin-top: 70px;
 }
 
 #header_section {
@@ -164,6 +185,14 @@ header {
   transform: scaleY(0.98);
 }
 
+.program:hover i,
+.program_button a:hover,
+.wesing_date a:hover,
+#main-nav li a:hover,
+.hamburger i:hover {
+  color: #ec5242;
+}
+
 .wesing_programs i,
 .wesing_programs h4 {
   align-self: center;
@@ -176,8 +205,7 @@ header {
   transition: 300ms ease-in;
 }
 
-.wesing_programs h4,
-.wesing_programs i:hover {
+.wesing_programs h4 {
   color: #ec5242;
 }
 
@@ -190,6 +218,10 @@ header {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
+}
+
+.program_button a {
+  display: none;
 }
 
 .program_button button {
@@ -317,10 +349,6 @@ header {
   text-align: center;
 }
 
-header {
-  padding: 10px 0;
-}
-
 .about_header_section .intro_parag {
   background-color: #fff;
   border-radius: 0;
@@ -332,17 +360,9 @@ header {
   transition: 200ms;
 }
 
-.wesing_date a:hover {
-  color: #ec5242;
-}
-
 #about_project_schedule {
   background-color: #fff;
   padding-bottom: 50px;
-}
-
-#about_project_schedule .main-program {
-  line-height: 1.6;
 }
 
 #about_project_schedule .main-program h3 {
@@ -352,6 +372,7 @@ header {
   font-size: 25px;
   text-align: center;
   font-family: 'cocogoose', sans-serif;
+  line-height: 1.6;
 }
 
 #about_project_schedule p,
@@ -363,6 +384,11 @@ header {
 
 #about_project_schedule p {
   text-align: center;
+}
+
+#about_project_schedule .hide-parag {
+  padding-top: 0;
+  display: none;
 }
 
 #about_project_schedule .wesing_logo {
@@ -516,22 +542,58 @@ footer .final-parag p {
 
 /* Media Queries */
 @media all and (min-width: 768px) {
-
-  /* #page-header {
-    display: flex;
-    width: 85%;
-    justify-content: space-between;
-  }
-  .hamburger i {
+  .hamburger {
     display: none;
-    margin: 0;
   }
 
-  #page_logo img {
-    width: 70px;
-    height: 70px; */
-/* } */
+  .logout-nav {
+    background-color: #272a31;
+    height: 30px;
+    display: block;
+  }
 
+ .logout-nav nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+ .logout-nav li,
+ .nav-with-image li {
+    display: inline-block;
+    margin-right: 30px;
+    list-style: none;
+  }
+
+ .logout-nav li a {
+    color: #d3d3d3;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 400ms;
+  }
+
+  #main-nav .nav-with-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #main-nav .nav-with-image img {
+    width: 80px;
+    padding-top: 10px;
+  }
+
+  .nav-with-image li a {
+    color: #272a31;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .nav-with-image li .current {
+    color: #ec5242;
+  }
 
   #header_section,
   .about_header_section {
@@ -578,6 +640,18 @@ footer .final-parag p {
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
+    padding: 30px 15px;
+  }
+
+  .program_button a {
+    display: block;
+    color: #d3d3d3;
+    text-transform: uppercase;
+    transition: 400ms;
+  }
+
+  .program_button button {
+    display: none;
   }
 
   #project_schedule {
@@ -611,8 +685,43 @@ footer .final-parag p {
     display: none;
   }
 
+  #about_project_schedule p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #about_project_schedule .wesing_logo {
+    width: 40%;
+    margin: 30px auto;
+  }
+
+  #about_project_schedule .hide-parag {
+    display: block;
+  }
+
+  #previous_event_card {
+    flex-direction: row;
+    width: 75%;
+    margin: 80px auto;
+  }
+
+  .sponsors {
+    display: none;
+  }
+
   footer {
     justify-content: space-evenly;
     height: 90px;
+  }
+
+  #about-footer {
+    padding: 60px 0;
+    background-color: #272a31;
+    color: #fff;
+
+  }
+
+  #about-footer .final-parag p {
+    color: #fff;
   }
 }
