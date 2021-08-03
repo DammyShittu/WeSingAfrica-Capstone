@@ -1,9 +1,9 @@
 // Mobile Menu
 
-const weSingMenu = document.getElementById("wesing_menu");
-const openWesingMenu = document.getElementById("bars");
-const closeWesingMenu = document.getElementById("close-menu");
-const clickLinks = document.querySelectorAll(".header-link")
+const weSingMenu = document.getElementById('wesing_menu');
+const openWesingMenu = document.getElementById('bars');
+const closeWesingMenu = document.getElementById('close-menu');
+const clickLinks = document.querySelectorAll('.header-link')
 
 openWesingMenu.addEventListener('click', () => {
   weSingMenu.style.top = '0';
