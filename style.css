@@ -18,7 +18,7 @@ body {
   width: 100%;
   height: 50px;
   padding: 10px 0;
-  background-color: rgb(248, 237, 237);
+  background-color: rgb(235, 234, 234);
 }
 
 .hamburger {
@@ -78,7 +78,10 @@ body {
 .wesing_date {
   line-height: 2;
   color: #333;
-  font-weight: bold;
+}
+
+.wesing_date h2 {
+  font-family: 'cocogoose', sans-serif;
 }
 
 .wesing_date h2 i,
@@ -102,6 +105,10 @@ body {
   padding-top: 30px;
 }
 
+#project_schedule {
+  background-image: url(./images/program-x.png);
+}
+
 #project_schedule .main-program,
 #wesing_guests .main-program,
 #about_project_schedule .main-program,
@@ -117,6 +124,7 @@ body {
 .main-program h3 {
   color: #fff;
   font-size: 22px;
+  font-family: 'cocogoose', sans-serif;
 }
 
 #project_schedule hr,
@@ -140,7 +148,7 @@ body {
 .wesing_programs .program {
   width: 95%;
   margin: 0 auto;
-  background: hsla(96, 100%, 94%, 0.1);
+  background-color: #f5f5f520;
   display: flex;
   gap: 20px;
   padding: 10px;
@@ -148,10 +156,16 @@ body {
   box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
   -webkit-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
   -moz-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
+  transition: 300ms ease-in-out;
 }
 
 .wesing_programs .program_2 {
   gap: 27px;
+}
+
+.wesing_programs .program:hover {
+  border: 2px solid #fff;
+  transform: scaleY(0.98);
 }
 
 .wesing_programs i,
@@ -162,6 +176,12 @@ body {
 
 .wesing_programs i {
   color: #fff;
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+.wesing_programs i:hover {
+  color: #ec5242;
 }
 
 .wesing_programs h4 {
@@ -180,9 +200,9 @@ body {
 }
 
 .program_button button {
-  padding: 15px;
+  padding: 20px;
   background-color: #ec5242;
-  color: #d3d3d3;
+  color: #fff;
   border: 0;
   outline: 0;
   font-size: 16px;
@@ -206,6 +226,7 @@ body {
 #wesing_guests .main-program h3 {
   color: #272a31;
   margin-top: 20px;
+  font-family: 'cocogoose', sans-serif;
 }
 
 .guest_list {
@@ -279,6 +300,7 @@ body {
   color: #272a31;
   text-transform: uppercase;
   font-size: 18px;
+  cursor: pointer;
 }
 
 #wesing_guests .guest_button button i {
@@ -314,6 +336,11 @@ header {
 .wesing_date a {
   color: #1e2022;
   font-weight: bolder;
+  transition: 200ms;
+}
+
+.wesing_date a:hover {
+  color: #ec5242;
 }
 
 #about_project_schedule {
@@ -331,6 +358,7 @@ header {
   margin: 0 auto;
   font-size: 25px;
   text-align: center;
+  font-family: 'cocogoose', sans-serif;
 }
 
 #about_project_schedule p,
@@ -351,26 +379,15 @@ header {
   margin: 0 auto;
   border: 1px solid rgba(181, 178, 178, 0.597);
   margin-top: 30px;
-  gap: 10px;
   padding: 10px;
+  height: 200px;
 }
 
 #about_project_schedule .wesing_logo img {
-  width: 100px;
-  height: 100px;
+  width: 350px;
+  height: 350px;
 }
 
-#about_project_schedule .wesing_logo h4 {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-#about_project_schedule .wesing_logo span {
-  font-size: 12px;
-  padding: 5px 0;
-  border-top: 1px solid rgba(181, 178, 178, 0.597);
-  border-bottom: 1px solid rgba(181, 178, 178, 0.597);
-}
 
 #previous_events {
   background-color: #fff;
@@ -380,11 +397,13 @@ header {
 }
 
 #previous_events .main-program h3 {
+  font-family: 'cocogoose', sans-serif;
   color: #272a31;
   width: 80%;
   margin: 0 auto;
   line-height: 1.6;
   font-size: 26px;
+  font-weight: bold;
 }
 
 #previous_events p {
@@ -409,6 +428,15 @@ header {
   align-items: center;
   color: #fff;
   gap: 15px;
+  transition: 300ms ease-in;
+  cursor: pointer;
+}
+
+#previous_event_card .event_card:hover {
+  box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
+  -moz-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
+  transform: translateY(-10px);
 }
 
 #previous_event_card .card_1 {
@@ -494,3 +522,8 @@ footer .final-parag p {
   font-size: 14px;
   color: #333;
 }
+
+/* Media Queries */
+/* @media all and (min-width: 768px) {
+
+} */
