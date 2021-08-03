@@ -391,6 +391,22 @@ body {
   padding-left: 10px;
 }
 
+.go-up {
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 300ms;
+  display: none;
+}
+
+.go-up i {
+  color: #e8240e;
+}
+
 /* About.html Styling */
 
 .about_header_section {
