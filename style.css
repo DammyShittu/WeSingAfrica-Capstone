@@ -240,7 +240,7 @@ body {
 
 .wesing_programs .program:hover {
   border: 2px solid #fff;
-  transform: scaleY(0.98);
+  transform: scale(0.98);
 }
 
 .program:hover i,
@@ -330,9 +330,9 @@ body {
 
 .guest_list .guest .image_design .checker {
   position: absolute;
-  top: -30px;
+  top: -25px;
   left: -20px;
-  width: 90px;
+  width: 80px;
   z-index: 2;
 }
 
@@ -478,8 +478,10 @@ body {
 }
 
 #about_project_schedule .wesing_logo img {
-  width: 350px;
-  height: 350px;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
 }
 
 
@@ -594,6 +596,7 @@ footer {
   align-items: center;
   margin: 0 auto;
   gap: 30px;
+  padding: 30px 0;
 }
 
 footer .footer_copy {
@@ -680,6 +683,11 @@ footer .final-parag p {
     margin: 0 auto;
   }
 
+  .wesing_header,
+  .about_header_section .wesing_header {
+    width: 80%;
+  }
+
   #header_section .hello,
   .about_header_section .hello {
     font-size: 28px;
@@ -688,12 +696,12 @@ footer .final-parag p {
   #header_section .hello_capital,
   .about_header_section .hello_capital {
     font-size: 50px;
-    width: 60%;
+    width: 80%;
   }
 
   #header_section .intro_parag,
   .about_header_section .intro_parag {
-    width: 45%;
+    width: 70%;
     padding: 15px;
 
   }
@@ -705,11 +713,11 @@ footer .final-parag p {
 
 
   .wesing_programs {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
-    gap: 3px;
+    column-gap: 10px;
   }
 
   .wesing_programs .program {
@@ -740,7 +748,7 @@ footer .final-parag p {
 
   .guest_list {
     grid-template-columns: repeat(2, 1fr);
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 70px;
   }
@@ -750,11 +758,11 @@ footer .final-parag p {
   }
 
   #wesing_partners .partners {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
   }
   #wesing_partners .partners img {
-    width: 18%;
+    width: 16%;
   }
 
   #wesing_guests .guest_button {
@@ -767,7 +775,7 @@ footer .final-parag p {
   }
 
   #about_project_schedule .wesing_logo {
-    width: 40%;
+    width: 50%;
     margin: 30px auto;
   }
 
@@ -790,6 +798,8 @@ footer .final-parag p {
   }
 
   footer {
+    width: 80%;
+    margin: 0 auto;
     justify-content: space-evenly;
     height: 90px;
   }
@@ -801,8 +811,29 @@ footer .final-parag p {
 
   }
 
+  footer .footer_copy img {
+    width: 100px;
+    height: 100px;
+  }
+
   #about-footer .final-parag p {
     color: #fff;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #header_section .hello_capital,
+  .about_header_section .hello_capital {
+    width: 60%;
+  }
+
+  #header_section .intro_parag,
+  .about_header_section .intro_parag {
+    width: 45%;
+  }
+
+  .wesing_programs {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

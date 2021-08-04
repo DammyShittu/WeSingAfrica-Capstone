@@ -137,4 +137,4 @@ function showMyGuests() {
   }
 }
 
-sectionForGuests.onload = showMyGuests();
+sectionForGuests.onresize = showMyGuests();
