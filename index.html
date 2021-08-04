@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="style.css">
+  <title>WeSingAfrica Home Page</title>
+</head>
+
+<body>
+
+  <!-- Mobile Menu -->
+  <div id="wesing_menu" class="mobile-menu">
+    <ul>
+      <li class="header-link"><a href="#">Home</a></li>
+      <li class="header-link"><a href="about.html">About</a></li>
+      <li class="header-link"><a href="#project_schedule">Program</a></li>
+      <li class="header-link"><a href="./about.html#previous_events">Previous Events</a></li>
+      <li class="header-link"><a href="#wesing_guests">Guests</a></li>
+    </ul>
+    <img src="./images/Icon.png" alt="Close Menu" class="close" id="close-menu">
+  </div>
+  <!-- End Of Mobile Menu -->
+
+  <header id="main-nav">
+    <!-- First Navigation Bar -->
+    <div class="logout-nav">
+      <nav id="first-nav">
+        <ul>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Second Navigation Bar -->
+    <div class="hamburger">
+      <i class="fas fa-bars fa-2x" id="bars"></i>
+    </div>
+    <div class="nav-with-image">
+      <div>
+
+        <a href="#"><img src="./images/wesing-logo.png" alt="Header Logo"></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="header-link"><a href="#" class="current">Home</a></li>
+          <li class="header-link"><a href="about.html">About</a></li>
+          <li class="header-link"><a href="#project_schedule">Program</a></li>
+          <li class="header-link"><a href="./about.html#previous_events">Previous Events</a></li>
+          <li class="header-link"><a href="#wesing_guests">Guests</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Headline Section -->
+
+    <section id="header_section">
+      <div class="wesing_header">
+        <div class="intro">
+          <h1 class="hello">"Hello! Worshipper"</h1>
+          <h2 class="hello_capital">WeSingAfrica Gospel Music Concert 2021</h2>
+        </div>
+
+        <div class="intro_parag">
+          A physical gathering of people from all African countries and a global online reach, with the sole aim of
+          <span>worship</span> through songs is taking place in Lagos, Nigeria, in December.
+        </div>
+
+        <div class="wesing_date">
+          <h2><i class="far fa-calendar-alt"></i> 2021.12.10(FRI) ~ 11(SAT)</h2>
+          <p><i class="far fa-clock"></i> 19:00 ~ 06:00 (UTC+1)</p>
+          <h3><i class="fas fa-map-marker-alt"></i> Teslim Balogun Stadium, Surulere, Lagos.</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Schedule Section -->
+
+    <section id="project_schedule">
+      <div class="main-program">
+        <h3>Main Program</h3>
+        <hr>
+      </div>
+
+      <div class="wesing_programs">
+        <div class="program">
+          <i class="fas fa-users fa-2x"></i>
+          <h4>Counselling</h4>
+          <p>Get answers to various issues of life from our experienced and spiritually inclined counsellors during our
+            two-hour counselling session</p>
+        </div>
+        <div class="program program_2">
+          <i class="fas fa-pray fa-2x"></i>
+          <h4>Intercession</h4>
+          <p>One hour intercessory prayer for the nations of Africa, governments, global economies, families and
+            individuals. Write your prayer requests.</p>
+        </div>
+        <div class="program program_2">
+          <i class="fas fa-praying-hands fa-2x"></i>
+          <h4>WARship</h4>
+          <p>The Father seeks those who will worship him in spirit and in truth. Get ready to pour your heart out during
+            our four-hour WARship session.</p>
+        </div>
+        <div class="program">
+          <i class="fas fa-volume-up fa-2x"></i>
+          <h4>PraiseParty</h4>
+          <p>Are you ready to danceand sing praises to the Most High? Learn all the amazing dance moves to think you can
+            pull off because we'll be dancing for four hours.</p>
+        </div>
+
+      </div>
+
+      <div class="program_button">
+        <a href="#">See the whole program</a>
+        <button type="submit">Book A Counselling Session</button>
+      </div>
+
+    </section>
+
+    <!-- Invited Guests Section -->
+    <section id="wesing_guests">
+      <div class="main-program">
+        <h3>Guests</h3>
+        <hr>
+      </div>
+
+      <!--Content Of This Section Will Be Displayed Dynamically On Page Load using JavaScript. See guests.js for code.  -->
+      <div class="guest_list"></div>
+
+    </section>
+
+    <!-- Partners -->
+    <section id="wesing_partners">
+      <div class="main-program">
+        <h3>Partners</h3>
+        <hr>
+      </div>
+
+      <div class="partners">
+        <img src="./images/goog.png" alt="Mozilla">
+        <img src="./images/mozil.png" alt="Google">
+        <img src="./images/naver.png" alt="Naver">
+        <img src="./images/daum.png" alt="Daum">
+        <img src="./images/airbnb.png" alt="Airbnb">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer_copy">
+      <img src="./images/wesing-logo.png" alt="Footer Logo">
+      <aside>
+        <h6>WeSingAfrica <br> Gospel Concert</h6>
+      </aside>
+    </div>
+
+    <div class="final-parag">
+      <p>2021 WeSingAfrica Nigeria</p>
+      <p>Some Rights Reserved</p>
+    </div>
+
+    <div class="go-up">
+      <a href="#"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/guests.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #272a31;
+}
+
+hr {
+  width: 35px;
+}
+
+/* Mobile Menu Styling */
+.mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #b1b1b1;
+  top: -110%;
+  left: 0;
+  z-index: 100;
+  transition: 500ms ease-in-out;
+  text-align: center;
+}
+
+.mobile-menu ul {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.logout-nav li,
+.nav-with-image li {
+  display: inline-block;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.mobile-menu ul li {
+  position: relative;
+  list-style: none;
+  margin: 35px auto;
+  z-index: 999;
+}
+
+.program_button a {
+  display: none;
+}
+
+.wesing_date a {
+  color: #1e2022;
+  font-weight: bolder;
+  transition: 200ms;
+}
+
+.logout-nav li a {
+  color: #d3d3d3;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.nav-with-image li a {
+  color: #272a31;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.mobile-menu ul li a {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  color: #272a31;
+  text-decoration: none;
+  padding: 5px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger i {
+  cursor: pointer;
+  transition: 200ms;
+  transform: scale(0.98);
+}
+
+.program_button a:hover,
+.wesing_date a:hover,
+.mobile-menu ul li a:hover {
+  color: #ec5242;
+  transform: scale(1.03);
+}
+
+.wesing_programs i,
+.wesing_programs h4 {
+  align-self: center;
+  justify-self: center;
+}
+
+.wesing_programs i {
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+.go-up i {
+  color: #e8240e;
+}
+
+.wesing_date h2 i,
+.wesing_date h3 i {
+  margin-right: 10px;
+}
+
+.wesing_date p i {
+  margin-right: 20px;
+}
+
+.program:hover i,
+#main-nav li a:hover,
+.hamburger i:hover {
+  color: #ec5242;
+}
+
+.mobile-menu img {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+footer .footer_copy img {
+  width: 50px;
+  height: 50px;
+}
+
+.mobile-menu img:hover {
+  animation: rotateX 300ms ease-in-out;
+  color: #ec5242;
+}
+
+/* End Of Mobile Menu Styling */
+.hamburger {
+  width: 80%;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.guest_list .guest img {
+  position: relative;
+  width: 120px;
+  z-index: 3;
+}
+
+#main-nav .nav-with-image {
+  height: 70px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  display: none;
+}
+
+.logout-nav {
+  background-color: #272a31;
+  height: 30px;
+  display: none;
+}
+
+.logout-nav nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-nav .nav-with-image img {
+  width: 80px;
+  padding-top: 10px;
+}
+
+.nav-with-image li .current {
+  color: #ec5242;
+}
+
+#main-nav .nav-with-image i {
+  margin-top: 70px;
+}
+
+#header_section {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(191, 188, 188, 0.6)
+    ),
+    url(./images/worship.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.wesing_header,
+.about_header_section .wesing_header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about_header_section .hello,
+#header_section .hello {
+  color: #ec5242;
+  font-weight: normal;
+  font-size: 23px;
+  padding-top: 60px;
+}
+
+.about_header_section .hello_capital,
+#header_section .hello_capital {
+  color: #e8240e;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 2px rgba(140, 136, 136, 0.6);
+  font-size: 40px;
+  font-weight: bolder;
+  line-height: 1.2;
+  padding: 10px 0;
+}
+
+.about_header_section .intro_parag {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 10px;
+}
+
+#header_section .intro_parag {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  border-radius: 10px;
+}
+
+.wesing_date {
+  line-height: 2;
+  color: #333;
+}
+
+.wesing_date h2 {
+  font-family: 'cocogoose', sans-serif;
+}
+
+.wesing_date h3 {
+  line-height: 1.2;
+}
+
+#project_schedule,
+#about_project_schedule {
+  width: 100%;
+  height: 100%;
+  background-color: #272a31;
+  padding-top: 30px;
+}
+
+#project_schedule {
+  background-image: url(./images/program-x.png);
+}
+
+#project_schedule .main-program,
+#wesing_guests .main-program,
+#about_project_schedule .main-program,
+#previous_events .main-program,
+#wesing_partners .main-program {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.5;
+}
+
+.main-program h3 {
+  color: #fff;
+  font-size: 22px;
+  font-family: 'cocogoose', sans-serif;
+}
+
+#project_schedule hr,
+#wesing_guests hr,
+#about_project_schedule hr,
+#previous_events hr,
+#wesing_partners hr {
+  border: 0;
+  border-top: 1px solid #ec5242;
+}
+
+.wesing_programs,
+.guest_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.wesing_programs .program {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #f5f5f520;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  transition: 300ms ease-in-out;
+}
+
+.wesing_programs .program_2 {
+  gap: 27px;
+}
+
+.wesing_programs .program:hover {
+  border: 2px solid #fff;
+  transform: scale(0.98);
+}
+
+.wesing_programs h4 {
+  color: #ec5242;
+}
+
+.wesing_programs p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.program_button {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.program_button button {
+  padding: 20px;
+  background-color: #ec5242;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.program_button button:hover {
+  background: linear-gradient(to right, #301917, #dd7569);
+}
+
+.program_button button:focus {
+  background-color: #e8240e;
+}
+
+#wesing_guests {
+  background-color: #fff;
+}
+
+#wesing_guests .main-program h3 {
+  color: #272a31;
+  margin-top: 20px;
+  font-family: 'cocogoose', sans-serif;
+}
+
+.guest_list {
+  gap: 50px;
+  padding-bottom: 30px;
+}
+
+.guest_list .guest {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+}
+
+.guest aside {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.guest aside h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.guest aside p {
+  color: #ec5242;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.guest aside span {
+  font-size: 14px;
+  color: #272a31;
+}
+
+.guest_list .guest-hidden {
+  display: none;
+}
+
+.go-up {
+  border: 1px solid #333;
+  border-radius: 50%;
+  padding: 5px 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 300ms;
+  display: none;
+}
+
+/* About.html Styling */
+
+.about_header_section {
+  background-image:
+    linear-gradient(
+      rgba(253, 253, 253, 0.7),
+      rgba(218, 218, 218, 0.8)
+    ),
+    url(./images/headset.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#about_project_schedule {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+
+#about_project_schedule .main-program h3 {
+  color: #272a31;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'cocogoose', sans-serif;
+  line-height: 1.6;
+}
+
+footer .final-parag p {
+  font-size: 14px;
+  color: #333;
+}
+
+#about_project_schedule p,
+#about_project_schedule .wesing_logo {
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#about_project_schedule p {
+  text-align: center;
+}
+
+#about_project_schedule .hide-parag {
+  padding-top: 0;
+  display: none;
+}
+
+#about_project_schedule .wesing_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 1px solid rgba(181, 178, 178, 0.597);
+  margin-top: 30px;
+  padding: 10px;
+  height: 200px;
+}
+
+#about_project_schedule .wesing_logo img {
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
+}
+
+#previous_events {
+  background-color: #fff;
+  text-align: center;
+  padding: 90px 0;
+  border-top: 1px solid rgba(158, 156, 156, 0.83);
+}
+
+#previous_events .main-program h3 {
+  font-family: 'cocogoose', sans-serif;
+  color: #272a31;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#previous_events p {
+  font-size: 15px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+#previous_event_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#previous_event_card .event_card {
+  width: 85%;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 15px;
+  transition: 300ms ease-in;
+  cursor: pointer;
+}
+
+#previous_event_card .event_card:hover {
+  box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  transform: translateY(-10px);
+}
+
+#previous_event_card .card_1 {
+  background-image:
+    linear-gradient(
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url(./images/testimonial_1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#previous_event_card .card_2 {
+  background-image:
+    linear-gradient(
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url(./images/testimonial_2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#previous_event_card .event_card h5 {
+  font-size: 30px;
+}
+
+footer .footer_copy h6 {
+  font-size: 16px;
+}
+
+#previous_event_card .event_card h6 {
+  font-size: 15px;
+}
+
+#wesing_partners {
+  background: #272a31;
+  text-align: center;
+}
+
+#wesing_partners .main-program {
+  padding: 30px 0;
+}
+
+#wesing_partners .partners {
+  display: flex;
+  width: 90%;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+#wesing_partners .partners img {
+  width: 30%;
+}
+
+footer {
+  background-color: #fff;
+  display: flex;
+  height: 130px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+footer .footer_copy {
+  display: flex;
+  align-items: center;
+}
+
+/* Media Queries */
+@media all and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .logout-nav {
+    display: block;
+  }
+
+  #main-nav .nav-with-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #header_section,
+  .about_header_section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .wesing_header,
+  .about_header_section .wesing_header {
+    width: 80%;
+  }
+
+  .about_header_section .hello,
+  #header_section .hello {
+    font-size: 28px;
+  }
+
+  .about_header_section .hello_capital,
+  .about_header_section .intro_parag {
+    margin: 20px auto;
+  }
+
+  .about_header_section .hello_capital,
+  #header_section .hello_capital {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  .about_header_section .intro_parag,
+  #header_section .intro_parag {
+    width: 70%;
+    padding: 15px;
+  }
+
+  .wesing_programs {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    column-gap: 10px;
+  }
+
+  .wesing_programs .program {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+  }
+
+  .program_button a {
+    display: block;
+    color: #d3d3d3;
+    text-transform: uppercase;
+    transition: 400ms;
+  }
+
+  .program_button button {
+    display: none;
+  }
+
+  #project_schedule {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .guest_list {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .guest_list .guest-hidden {
+    display: flex;
+  }
+
+  #wesing_partners .partners {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer .footer_copy img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #wesing_partners .partners img {
+    width: 16%;
+  }
+
+  #about_project_schedule p {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #about_project_schedule .wesing_logo {
+    width: 50%;
+    margin: 30px auto;
+  }
+
+  #about_project_schedule .hide-parag {
+    display: block;
+  }
+
+  #previous_event_card {
+    flex-direction: row;
+    width: 75%;
+    margin: 80px auto;
+  }
+
+  #previous_event_card .event_card {
+    height: 300px;
+  }
+
+  .sponsors {
+    display: none;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    height: 90px;
+  }
+
+  #about-footer {
+    padding: 60px 0;
+    background-color: #272a31;
+    color: #fff;
+  }
+
+  #about-footer .final-parag p {
+    color: #fff;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .about_header_section .hello_capital,
+  #header_section .hello_capital {
+    width: 60%;
+  }
+
+  .about_header_section .intro_parag,
+  #header_section .intro_parag {
+    width: 45%;
+  }
+
+  .wesing_programs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
