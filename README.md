@@ -2,11 +2,11 @@
 
 # Capstone Project
 
-< This project contains the HTML, CSS and JavaScript Capstone Project. Capstone Projects are done at the end of a module at Microverse.
+> This project contains the HTML, CSS and JavaScript Capstone Project. Capstone Projects are done at the end of a module at Microverse.
 
 # Project Name
 
-**WeSingAfrica Gospel Concert**
+## WeSingAfrica Gospel Concert
 
 **WeSingAfrica Gospel Concert is a fictional annual worship concert that holds in Africa. Two editions have been held previously in Kenya and South Africa. This project showcases the Home and About Pages with sections relating to the event's programs, previous events gallery and invited guests.**
 
@@ -59,7 +59,7 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/DammyShittu/WeSingAfrica-Capstone/issues).
 
-Show your support
+# Show your support
 
 Give a ⭐️ if you like this project!
 
