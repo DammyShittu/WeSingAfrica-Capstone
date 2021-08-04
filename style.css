@@ -14,6 +14,10 @@ body {
   color: #272a31;
 }
 
+hr {
+  width: 35px;
+}
+
 /* Mobile Menu Styling */
 .mobile-menu {
   position: absolute;
@@ -33,6 +37,13 @@ body {
   margin-top: 100px;
 }
 
+.logout-nav li,
+.nav-with-image li {
+  display: inline-block;
+  margin-right: 30px;
+  list-style: none;
+}
+
 .mobile-menu ul li {
   position: relative;
   list-style: none;
@@ -40,6 +51,28 @@ body {
   z-index: 999;
 }
 
+.program_button a {
+  display: none;
+}
+
+.wesing_date a {
+  color: #1e2022;
+  font-weight: bolder;
+  transition: 200ms;
+}
+
+.logout-nav li a {
+  color: #d3d3d3;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 400ms;
+}
+
+.nav-with-image li a {
+  color: #272a31;
+  text-decoration: none;
+  font-size: 14px;
+}
 
 .mobile-menu ul li a {
   font-size: 24px;
@@ -53,9 +86,48 @@ body {
   cursor: pointer;
 }
 
+.hamburger i {
+  cursor: pointer;
+  transition: 200ms;
+  transform: scale(0.98);
+}
+
+.program_button a:hover,
+.wesing_date a:hover,
 .mobile-menu ul li a:hover {
   color: #ec5242;
   transform: scale(1.03);
+}
+
+.wesing_programs i,
+.wesing_programs h4 {
+  align-self: center;
+  justify-self: center;
+}
+
+.wesing_programs i {
+  color: #fff;
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+.go-up i {
+  color: #e8240e;
+}
+
+.wesing_date h2 i,
+.wesing_date h3 i {
+  margin-right: 10px;
+}
+
+.wesing_date p i {
+  margin-right: 20px;
+}
+
+.program:hover i,
+#main-nav li a:hover,
+.hamburger i:hover {
+  color: #ec5242;
 }
 
 .mobile-menu img {
@@ -64,6 +136,11 @@ body {
   right: 30px;
   z-index: 3;
   cursor: pointer;
+}
+
+footer .footer_copy img {
+  width: 50px;
+  height: 50px;
 }
 
 .mobile-menu img:hover {
@@ -80,10 +157,10 @@ body {
   align-items: center;
 }
 
-.hamburger i {
-  cursor: pointer;
-  transition: 200ms;
-  transform: scale(0.98);
+.guest_list .guest img {
+  position: relative;
+  width: 120px;
+  z-index: 3;
 }
 
 #main-nav .nav-with-image {
@@ -95,7 +172,26 @@ body {
 }
 
 .logout-nav {
+  background-color: #272a31;
+  height: 30px;
   display: none;
+}
+
+.logout-nav nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#main-nav .nav-with-image img {
+  width: 80px;
+  padding-top: 10px;
+}
+
+.nav-with-image li .current {
+  color: #ec5242;
 }
 
 #main-nav .nav-with-image i {
@@ -103,11 +199,12 @@ body {
 }
 
 #header_section {
-  background-image:  linear-gradient(
-    rgba(255, 255, 255, 0.7),
-    rgba(191, 188, 188, 0.6)
-  ),
-  url(./images/worship.jpg);
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(191, 188, 188, 0.6)
+    ),
+    url(./images/worship.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,16 +218,16 @@ body {
   margin: 0 auto;
 }
 
-#header_section .hello,
-.about_header_section .hello {
+.about_header_section .hello,
+#header_section .hello {
   color: #ec5242;
   font-weight: normal;
   font-size: 23px;
   padding-top: 60px;
 }
 
-#header_section .hello_capital,
-.about_header_section .hello_capital {
+.about_header_section .hello_capital,
+#header_section .hello_capital {
   color: #e8240e;
   text-transform: uppercase;
   text-shadow: 3px 2px 2px rgba(140, 136, 136, 0.6);
@@ -140,14 +237,19 @@ body {
   padding: 10px 0;
 }
 
-#header_section .intro_parag,
 .about_header_section .intro_parag {
+  background-color: #fff;
+  border-radius: 0;
+  padding: 10px;
+}
+
+#header_section .intro_parag {
   border: 2px solid rgba(255, 255, 255, 0.25);
   padding: 10px;
-  border-radius: 10px;
   color: #333;
   font-weight: bold;
   margin: 40px 0 20px 0;
+  border-radius: 10px;
 }
 
 .wesing_date {
@@ -157,15 +259,6 @@ body {
 
 .wesing_date h2 {
   font-family: 'cocogoose', sans-serif;
-}
-
-.wesing_date h2 i,
-.wesing_date h3 i {
-  margin-right: 10px;
-}
-
-.wesing_date p i {
-  margin-right: 20px;
 }
 
 .wesing_date h3 {
@@ -228,9 +321,9 @@ body {
   gap: 20px;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
-  -webkit-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
-  -moz-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
+  box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
   transition: 300ms ease-in-out;
 }
 
@@ -241,26 +334,6 @@ body {
 .wesing_programs .program:hover {
   border: 2px solid #fff;
   transform: scale(0.98);
-}
-
-.program:hover i,
-.program_button a:hover,
-.wesing_date a:hover,
-#main-nav li a:hover,
-.hamburger i:hover {
-  color: #ec5242;
-}
-
-.wesing_programs i,
-.wesing_programs h4 {
-  align-self: center;
-  justify-self: center;
-}
-
-.wesing_programs i {
-  color: #fff;
-  cursor: pointer;
-  transition: 300ms ease-in;
 }
 
 .wesing_programs h4 {
@@ -276,10 +349,6 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-}
-
-.program_button a {
-  display: none;
 }
 
 .program_button button {
@@ -336,19 +405,13 @@ body {
   z-index: 2;
 }
 
-.guest_list .guest img {
-  position: relative;
-  width: 120px;
-  z-index: 3;
-}
-
 .guest aside {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.guest aside h4{
+.guest aside h4 {
   font-size: 22px;
   font-weight: bold;
 }
@@ -403,35 +466,21 @@ body {
   display: none;
 }
 
-.go-up i {
-  color: #e8240e;
-}
-
 /* About.html Styling */
 
 .about_header_section {
-  background-image:  linear-gradient(
-    rgba(253, 253, 253, 0.7),
-    rgba(218, 218, 218, 0.8)
-  ),
-  url(./images/headset.jpg);
+  background-image:
+    linear-gradient(
+      rgba(253, 253, 253, 0.7),
+      rgba(218, 218, 218, 0.8)
+    ),
+    url(./images/headset.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: auto;
   padding-bottom: 20px;
   text-align: center;
-}
-
-.about_header_section .intro_parag {
-  background-color: #fff;
-  border-radius: 0;
-}
-
-.wesing_date a {
-  color: #1e2022;
-  font-weight: bolder;
-  transition: 200ms;
 }
 
 #about_project_schedule {
@@ -448,6 +497,11 @@ body {
   text-align: center;
   font-family: 'cocogoose', sans-serif;
   line-height: 1.6;
+}
+
+footer .final-parag p {
+  font-size: 14px;
+  color: #333;
 }
 
 #about_project_schedule p,
@@ -483,7 +537,6 @@ body {
   min-height: 300px;
   max-height: 500px;
 }
-
 
 #previous_events {
   background-color: #fff;
@@ -529,34 +582,40 @@ body {
 }
 
 #previous_event_card .event_card:hover {
-  box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
-  -webkit-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
-  -moz-box-shadow: 4px 4px 12px 0px rgba(69,66,66,0.75);
+  box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -webkit-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
+  -moz-box-shadow: 4px 4px 12px 0 rgba(69, 66, 66, 0.75);
   transform: translateY(-10px);
 }
 
 #previous_event_card .card_1 {
-  background-image:  linear-gradient(
-    rgba(255, 0, 0, 0.4),
-    rgba(255, 0, 0, 0.4)
-  ),
-  url(./images/testimonial_1.jpg);
+  background-image:
+    linear-gradient(
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url(./images/testimonial_1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 #previous_event_card .card_2 {
-  background-image:  linear-gradient(
-    rgba(255, 0, 0, 0.4),
-    rgba(255, 0, 0, 0.4)
-  ),
-  url(./images/testimonial_2.jpg);
+  background-image:
+    linear-gradient(
+      rgba(255, 0, 0, 0.4),
+      rgba(255, 0, 0, 0.4)
+    ),
+    url(./images/testimonial_2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 #previous_event_card .event_card h5 {
   font-size: 30px;
+}
+
+footer .footer_copy h6 {
+  font-size: 16px;
 }
 
 #previous_event_card .event_card h6 {
@@ -604,20 +663,6 @@ footer .footer_copy {
   align-items: center;
 }
 
-footer .footer_copy img {
-  width: 50px;
-  height: 50px;
-}
-
-footer .footer_copy h6 {
-  font-size: 16px;
-}
-
-footer .final-parag p {
-  font-size: 14px;
-  color: #333;
-}
-
 /* Media Queries */
 @media all and (min-width: 768px) {
   .hamburger {
@@ -625,52 +670,13 @@ footer .final-parag p {
   }
 
   .logout-nav {
-    background-color: #272a31;
-    height: 30px;
     display: block;
-  }
-
- .logout-nav nav {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
- .logout-nav li,
- .nav-with-image li {
-    display: inline-block;
-    margin-right: 30px;
-    list-style: none;
-  }
-
- .logout-nav li a {
-    color: #d3d3d3;
-    font-size: 12px;
-    text-decoration: none;
-    transition: 400ms;
   }
 
   #main-nav .nav-with-image {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  #main-nav .nav-with-image img {
-    width: 80px;
-    padding-top: 10px;
-  }
-
-  .nav-with-image li a {
-    color: #272a31;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-  .nav-with-image li .current {
-    color: #ec5242;
   }
 
   #header_section,
@@ -688,22 +694,9 @@ footer .final-parag p {
     width: 80%;
   }
 
-  #header_section .hello,
-  .about_header_section .hello {
+  .about_header_section .hello,
+  #header_section .hello {
     font-size: 28px;
-  }
-
-  #header_section .hello_capital,
-  .about_header_section .hello_capital {
-    font-size: 50px;
-    width: 80%;
-  }
-
-  #header_section .intro_parag,
-  .about_header_section .intro_parag {
-    width: 70%;
-    padding: 15px;
-
   }
 
   .about_header_section .hello_capital,
@@ -711,6 +704,17 @@ footer .final-parag p {
     margin: 20px auto;
   }
 
+  .about_header_section .hello_capital,
+  #header_section .hello_capital {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  .about_header_section .intro_parag,
+  #header_section .intro_parag {
+    width: 70%;
+    padding: 15px;
+  }
 
   .wesing_programs {
     grid-template-columns: repeat(2, 1fr);
@@ -761,6 +765,12 @@ footer .final-parag p {
     width: 80%;
     margin: 0 auto;
   }
+
+  footer .footer_copy img {
+    width: 100px;
+    height: 100px;
+  }
+
   #wesing_partners .partners img {
     width: 16%;
   }
@@ -808,12 +818,6 @@ footer .final-parag p {
     padding: 60px 0;
     background-color: #272a31;
     color: #fff;
-
-  }
-
-  footer .footer_copy img {
-    width: 100px;
-    height: 100px;
   }
 
   #about-footer .final-parag p {
@@ -822,13 +826,13 @@ footer .final-parag p {
 }
 
 @media all and (min-width: 1200px) {
-  #header_section .hello_capital,
-  .about_header_section .hello_capital {
+  .about_header_section .hello_capital,
+  #header_section .hello_capital {
     width: 60%;
   }
 
-  #header_section .intro_parag,
-  .about_header_section .intro_parag {
+  .about_header_section .intro_parag,
+  #header_section .intro_parag {
     width: 45%;
   }
 
