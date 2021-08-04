@@ -808,8 +808,6 @@ footer .footer_copy {
   }
 
   footer {
-    width: 80%;
-    margin: 0 auto;
     justify-content: space-evenly;
     height: 90px;
   }
