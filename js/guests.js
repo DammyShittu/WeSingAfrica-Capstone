@@ -122,18 +122,8 @@ const sectionForGuests = document.querySelector('.guest_list');
 function showMyGuests() {
   const guestKeys = Object.keys(wesingGuests);
   const guestKeysLength = Object.keys(wesingGuests).length;
-  const pageWidth = document.documentElement.clientWidth;
-  const showTwoCards = wesingGuests.slice(0, 2);
-  const twoGuestKeys = Object.keys(showTwoCards);
-  const twoGuestKeysLength = Object.keys(showTwoCards).length;
-  if (pageWidth < 768) {
-    for (let j = 0; j < twoGuestKeysLength; j += 1) {
-      sectionForGuests.innerHTML += showGuests(showTwoCards[twoGuestKeys[j]], j);
-    }
-  } else {
-    for (let i = 0; i < guestKeysLength; i += 1) {
-      sectionForGuests.innerHTML += showGuests(wesingGuests[guestKeys[i]], i);
-    }
+  for (let i = 0; i < guestKeysLength; i += 1) {
+    sectionForGuests.innerHTML += showGuests(wesingGuests[guestKeys[i]], i);
   }
 }
 

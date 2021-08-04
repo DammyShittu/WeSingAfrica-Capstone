@@ -23,7 +23,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: #272a31;
+  background-color: #b1b1b1;
   top: -110%;
   left: 0;
   z-index: 100;
@@ -79,7 +79,7 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  color: #ebebff;
+  color: #272a31;
   text-decoration: none;
   padding: 5px;
   transition: 300ms ease-in-out;
@@ -431,29 +431,6 @@ footer .footer_copy img {
   display: none;
 }
 
-#wesing_guests .guest_button {
-  display: flex;
-  padding: 20px 0;
-}
-
-#wesing_guests .guest_button button {
-  width: 95%;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid rgba(140, 137, 137, 0.638);
-  background: transparent;
-  padding: 15px;
-  color: #272a31;
-  text-transform: uppercase;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-#wesing_guests .guest_button button i {
-  color: #ec5242;
-  padding-left: 10px;
-}
-
 .go-up {
   border: 1px solid #333;
   border-radius: 50%;
@@ -773,10 +750,6 @@ footer .footer_copy {
 
   #wesing_partners .partners img {
     width: 16%;
-  }
-
-  #wesing_guests .guest_button {
-    display: none;
   }
 
   #about_project_schedule p {
