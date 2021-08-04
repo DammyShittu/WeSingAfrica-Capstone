@@ -13,7 +13,7 @@ const wesingGuests = [
 
   {
     image: {
-      imageUrl: './images/Jekalyn.png',
+      imageUrl: './images/jekalyn.png',
       imageAlt: 'Jekalyn Carr',
     },
     name: 'Jekalyn Carr',
