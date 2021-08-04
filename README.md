@@ -13,9 +13,11 @@
 ![Image of the desktop view](./images/desktop-design.png)
 
 
-# Live Website
+# Live Website and Project Presentation
 
 Click [here](https://dammyshittu.github.io/WeSingAfrica-Capstone/) to view the website online.
+
+*[This](https://www.loom.com/share/b30240d1b83043e9a973cffe39db8bb8) is the project presentation that was recorded using Loom.*
 
 # This project was built with:
 

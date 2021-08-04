@@ -1,11 +1,7 @@
 const wesingGuests = [
   {
-    underlay: {
-      imageUrl: './images/rubik.png',
-      imageAlt: 'Rubik',
-    },
     image: {
-      imageUrl: './images/Chandler.jpg',
+      imageUrl: './images/Chandler.png',
       imageAlt: 'Chandler Moore',
     },
     name: 'Chandler Moore',
@@ -16,12 +12,8 @@ const wesingGuests = [
   },
 
   {
-    underlay: {
-      imageUrl: './images/rubik.png',
-      imageAlt: 'Rubik',
-    },
     image: {
-      imageUrl: './images/Jekalyn.jpg',
+      imageUrl: './images/Jekalyn.png',
       imageAlt: 'Jekalyn Carr',
     },
     name: 'Jekalyn Carr',
@@ -32,12 +24,8 @@ const wesingGuests = [
   },
 
   {
-    underlay: {
-      imageUrl: './images/rubik.png',
-      imageAlt: 'Rubik',
-    },
     image: {
-      imageUrl: './images/jon.jpg',
+      imageUrl: './images/jon.png',
       imageAlt: 'Jonathan Mcreynolds',
     },
     name: 'Jonathan Mcreynolds',
@@ -49,12 +37,8 @@ const wesingGuests = [
   },
 
   {
-    underlay: {
-      imageUrl: './images/rubik.png',
-      imageAlt: 'Rubik',
-    },
     image: {
-      imageUrl: './images/mercy.jpg',
+      imageUrl: './images/mercy.png',
       imageAlt: 'Mercy Chinwo',
     },
     name: 'Mercy Chinwo',
@@ -65,12 +49,8 @@ const wesingGuests = [
   },
 
   {
-    underlay: {
-      imageUrl: './images/rubik.png',
-      imageAlt: 'Rubik',
-    },
     image: {
-      imageUrl: './images/Travis.jpg',
+      imageUrl: './images/Travis.png',
       imageAlt: 'Travis Greene',
     },
     name: 'Travis Greene',
@@ -81,12 +61,8 @@ const wesingGuests = [
   },
 
   {
-    underlay: {
-      imageUrl: './images/rubik.png',
-      imageAlt: 'Rubik',
-    },
     image: {
-      imageUrl: './images/victoria.jpg',
+      imageUrl: './images/victoria.png',
       imageAlt: 'Victoria Orenze',
     },
     name: 'Victoria Orenze',
@@ -100,7 +76,6 @@ const wesingGuests = [
 function showGuests(guest) {
   const guestCard = `<div class="guest">
   <div class="image_design">
-    <img src="${guest.underlay.imageUrl}" alt="${guest.underlay.imageAlt}" class="checker">
     <img src="${guest.image.imageUrl}" alt="${guest.image.imageAlt}">
   </div>
 

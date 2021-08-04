@@ -393,18 +393,6 @@ footer .footer_copy img {
   gap: 30px;
 }
 
-.guest_list .guest .image_design {
-  position: relative;
-}
-
-.guest_list .guest .image_design .checker {
-  position: absolute;
-  top: -25px;
-  left: -20px;
-  width: 80px;
-  z-index: 2;
-}
-
 .guest aside {
   display: flex;
   flex-direction: column;
