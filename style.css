@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +5,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
   line-height: 1.5;
   background-color: #f5f5f5;
@@ -127,7 +125,7 @@ hr {
 .program:hover i,
 #main-nav li a:hover,
 .hamburger i:hover {
-  color: #ec5242;
+  color: #f89807;
 }
 
 .mobile-menu img {
@@ -191,7 +189,7 @@ footer .footer_copy img {
 }
 
 .nav-with-image li .current {
-  color: #ec5242;
+  color: #f89807;
 }
 
 #main-nav .nav-with-image i {
@@ -201,8 +199,8 @@ footer .footer_copy img {
 #header_section {
   background-image:
     linear-gradient(
-      rgba(255, 255, 255, 0.7),
-      rgba(191, 188, 188, 0.6)
+      rgba(94, 91, 91, 0.7),
+      rgba(94, 92, 92, 0.6)
     ),
     url(./images/worship.jpg);
   background-size: cover;
@@ -210,6 +208,7 @@ footer .footer_copy img {
   background-position: center;
   height: auto;
   padding-bottom: 20px;
+  color: #f89807;
 }
 
 .wesing_header,
@@ -220,7 +219,6 @@ footer .footer_copy img {
 
 .about_header_section .hello,
 #header_section .hello {
-  color: #ec5242;
   font-weight: normal;
   font-size: 23px;
   padding-top: 60px;
@@ -228,7 +226,6 @@ footer .footer_copy img {
 
 .about_header_section .hello_capital,
 #header_section .hello_capital {
-  color: #e8240e;
   text-transform: uppercase;
   text-shadow: 3px 2px 2px rgba(140, 136, 136, 0.6);
   font-size: 40px;
@@ -244,17 +241,16 @@ footer .footer_copy img {
 }
 
 #header_section .intro_parag {
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: #fff;
   padding: 10px;
-  color: #333;
   font-weight: bold;
   margin: 40px 0 20px 0;
+  color: #333;
   border-radius: 10px;
 }
 
 .wesing_date {
   line-height: 2;
-  color: #333;
 }
 
 .wesing_date h2 {
@@ -797,6 +793,14 @@ footer .footer_copy {
 
   .wesing_programs {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .guest aside h4 {
+    font-size: 30px;
+  }
+
+  .guest aside p {
+    font-size: 20px;
   }
 }
 
