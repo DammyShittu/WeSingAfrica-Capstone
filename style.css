@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #f5f5f5;
@@ -54,7 +54,7 @@ hr {
 }
 
 .wesing_date a {
-  color: #1e2022;
+  color: #ec5242;
   font-weight: bolder;
   transition: 200ms;
 }
@@ -125,7 +125,7 @@ hr {
 .program:hover i,
 #main-nav li a:hover,
 .hamburger i:hover {
-  color: #f89807;
+  color: #ec5242;
 }
 
 .mobile-menu img {
@@ -162,7 +162,7 @@ footer .footer_copy img {
 }
 
 #main-nav .nav-with-image {
-  height: 70px;
+  height: 50px;
   width: 80%;
   margin: 0 auto;
   background-color: #f5f5f5;
@@ -184,12 +184,12 @@ footer .footer_copy img {
 }
 
 #main-nav .nav-with-image img {
-  width: 80px;
+  width: 60px;
   padding-top: 10px;
 }
 
 .nav-with-image li .current {
-  color: #f89807;
+  color: #ec5242;
 }
 
 #main-nav .nav-with-image i {
@@ -199,8 +199,8 @@ footer .footer_copy img {
 #header_section {
   background-image:
     linear-gradient(
-      rgba(94, 91, 91, 0.7),
-      rgba(94, 92, 92, 0.6)
+      rgba(44, 43, 43, 0.6),
+      rgba(44, 43, 43, 0.6)
     ),
     url(./images/worship.jpg);
   background-size: cover;
@@ -208,7 +208,7 @@ footer .footer_copy img {
   background-position: center;
   height: auto;
   padding-bottom: 20px;
-  color: #f89807;
+  color: #ec5242;
 }
 
 .wesing_header,
@@ -227,9 +227,8 @@ footer .footer_copy img {
 .about_header_section .hello_capital,
 #header_section .hello_capital {
   text-transform: uppercase;
-  text-shadow: 3px 2px 2px rgba(140, 136, 136, 0.6);
+  text-shadow: 3px 2px 2px rgba(230, 48, 48, 0.6);
   font-size: 40px;
-  font-weight: bolder;
   line-height: 1.2;
   padding: 10px 0;
 }
@@ -238,6 +237,7 @@ footer .footer_copy img {
   background-color: #fff;
   border-radius: 0;
   padding: 10px;
+  color: #333;
 }
 
 #header_section .intro_parag {
@@ -432,8 +432,8 @@ footer .footer_copy img {
 .about_header_section {
   background-image:
     linear-gradient(
-      rgba(253, 253, 253, 0.7),
-      rgba(218, 218, 218, 0.8)
+      rgba(14, 4, 4, 0.748),
+      rgba(14, 4, 4, 0.748)
     ),
     url(./images/headset.jpg);
   background-size: cover;
@@ -442,6 +442,7 @@ footer .footer_copy img {
   height: auto;
   padding-bottom: 20px;
   text-align: center;
+  color: #ec5242;
 }
 
 #about_project_schedule {
@@ -642,7 +643,7 @@ footer .footer_copy {
 
   #header_section,
   .about_header_section {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -704,7 +705,6 @@ footer .footer_copy {
   }
 
   #project_schedule {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -716,6 +716,10 @@ footer .footer_copy {
     width: 80%;
     margin: 0 auto;
     margin-top: 70px;
+  }
+
+  .guest_list .guest {
+    flex-direction: column;
   }
 
   .guest_list .guest-hidden {
@@ -795,12 +799,29 @@ footer .footer_copy {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .guest aside h4 {
+  .main-program h3 {
     font-size: 30px;
   }
 
-  .guest aside p {
+  .wesing_programs h4 {
     font-size: 20px;
+  }
+
+  .wesing_programs p,
+  .guest aside span {
+    font-size: 16px;
+  }
+
+  .guest_list .guest {
+    flex-direction: row;
+  }
+
+  .guest aside h4 {
+    font-size: 24px;
+  }
+
+  .guest aside p {
+    font-size: 19px;
   }
 }
 
